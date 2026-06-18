@@ -383,59 +383,71 @@ ul {
 }
 
 /* ==============================
-   MENÚ HAMBURGUESA - CORREGIDO
+   MENÚ HAMBURGUESA - SOLUCIÓN FINAL
    ============================== */
 
-/* Botón */
+/* Botón hamburguesa: OCULTO en PC, VISIBLE en celular */
 .menu-movil {
-    display: none;
+    display: none; /* Oculto en escritorio */
     background: transparent;
     border: none;
-    font-size: 1.8rem;
-    color: #ffffff; /* Color blanco para que se vea en tu barra azul */
+    font-size: 2rem; /* Tamaño grande para que se vea bien */
+    color: #ffffff !important; /* COLOR BLANCO para que se vea en tu barra azul */
     cursor: pointer;
-    z-index: 99999; /* Muy importante: siempre encima */
+    position: absolute;
+    right: 20px; /* Lo pegamos a la derecha */
+    top: 50%;
+    transform: translateY(-50%); /* Centrado verticalmente */
+    z-index: 99999; /* Por encima de todo */
 }
 
-/* VERSIÓN CELULAR */
+/* 📱 SOLO PARA CELULARES (menos de 768px de ancho) */
 @media (max-width: 768px) {
+
+    /* Hacemos que aparezca el botón */
     .menu-movil {
-        display: block; /* Que aparezca el botón */
+        display: block !important;
     }
 
-    /* Menú OCULTO por defecto */
+    /* El menú que está oculto */
     .nav-desktop {
         position: absolute;
-        top: 100%;
+        top: 100%; /* Justo debajo de la barra azul */
         left: 0;
-        width: 100%;
+        width: 100%; /* Ancho completo */
         background-color: #ffffff; /* Fondo blanco */
-        flex-direction: column;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        padding: 1rem 0;
-        gap: 0;
-        /* AQUÍ ESTABA EL ERROR: le faltó estas dos líneas */
+        display: flex;
+        flex-direction: column; /* Opciones una debajo de otra */
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Sombra bonita */
+        
+        /* AQUÍ ESTABA EL SECRETO: Ocultamos con altura 0 */
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease;
+        transition: max-height 0.4s ease; /* Animación suave al bajar */
         z-index: 99998;
     }
 
-    /* Menú VISIBLE cuando tiene la clase "mostrar" */
+    /* Cuando tiene la clase "mostrar", se abre */
     .nav-desktop.mostrar {
-        max-height: 500px; /* Altura suficiente para 5 opciones */
+        max-height: 400px; /* Altura suficiente para las 5 opciones */
     }
 
-    /* Estilo de los enlaces */
+    /* Estilo de cada enlace del menú */
     .nav-desktop a {
-        display: block;
-        padding: 1rem 1.5rem;
-        color: #005293 !important; /* Tu color azul */
+        padding: 15px 20px; /* Espacio interno */
+        color: #004e8c !important; /* Tu color azul */
         font-weight: 600;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #eeeeee; /* Línea separadora */
         text-align: left;
+        font-size: 16px;
     }
+
     .nav-desktop a:last-child {
-        border-bottom: none;
+        border-bottom: none; /* Quitamos la última línea */
+    }
+
+    /* Para que el contenido no se monte encima */
+    .navbar-container {
+        position: relative;
     }
 }
