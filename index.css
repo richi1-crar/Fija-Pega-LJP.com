@@ -430,3 +430,46 @@ ul {
         border-bottom: 1px solid #f0f0f0;
     }
 }
+
+/* Asegura que el botón siempre esté bien posicionado */
+.menu-movil {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #ffffff; /* Si tu barra es azul oscuro, pon blanco aquí */
+    cursor: pointer;
+    position: relative;
+    z-index: 9999; /* Siempre encima de todo */
+}
+
+@media (max-width: 768px) {
+    .menu-movil { display: block; }
+
+    .nav-desktop {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0.8rem;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        z-index: 9998;
+    }
+
+    .nav-desktop.mostrar {
+        transform: translateY(0);
+    }
+
+    .nav-desktop a {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #f0f0f0;
+        color: #004e8c; /* Tu azul principal */
+    }
+}

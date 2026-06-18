@@ -161,17 +161,28 @@
             </div>
         </div>
     </footer>
-    <!-- Script para menú móvil -->
-<script>
+   <script>
 const botonMenu = document.querySelector('.menu-movil');
-const navMovil = document.querySelector('.nav-desktop'); // o .nav-movil si lo tienes así
+const navegacion = document.querySelector('.nav-desktop');
 
-botonMenu.addEventListener('click', () => {
-    navMovil.classList.toggle('mostrar');
-    botonMenu.innerHTML = botonMenu.innerHTML === '<i class="fa fa-bars"></i>' 
-        ? '<i class="fa fa-times"></i>' 
-        : '<i class="fa fa-bars"></i>';
-});
+// Evita error si no encuentra el botón
+if (botonMenu && navegacion) {
+    botonMenu.addEventListener('click', () => {
+        navegacion.classList.toggle('mostrar');
+        // Cambia ícono: rayas ↔ X
+        botonMenu.innerHTML = navegacion.classList.contains('mostrar') 
+            ? '<i class="fa fa-times"></i>' 
+            : '<i class="fa fa-bars"></i>';
+    });
+
+    // Cerrar menú al tocar un enlace
+    navegacion.querySelectorAll('a').forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            navegacion.classList.remove('mostrar');
+            botonMenu.innerHTML = '<i class="fa fa-bars"></i>';
+        });
+    });
+}
 </script>
 </body>
 </html>
