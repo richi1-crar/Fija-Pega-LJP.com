@@ -304,15 +304,17 @@
 const botonMenu = document.querySelector('.menu-movil');
 const nav = document.querySelector('.nav-desktop');
 
+console.log({botonMenu, nav}); // ayuda a ver si los encuentra
+
 if (botonMenu && nav) {
-    botonMenu.addEventListener('click', () => {
+    botonMenu.addEventListener('click', function(e) {
+        e.preventDefault();
         nav.classList.toggle('mostrar');
-        botonMenu.innerHTML = nav.classList.contains('mostrar') 
+        this.innerHTML = nav.classList.contains('mostrar') 
             ? '<i class="fa fa-times"></i>' 
             : '<i class="fa fa-bars"></i>';
     });
 
-    // Cerrar al hacer clic en una opción
     nav.querySelectorAll('a').forEach(enlace => {
         enlace.addEventListener('click', () => {
             nav.classList.remove('mostrar');

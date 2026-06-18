@@ -382,9 +382,7 @@ ul {
     }
 }
 
-/* ==============================
-   MENÚ HAMBURGUESA QUE SÍ ABRE
-   ============================== */
+/* MENÚ HAMBURGUESA FINAL */
 .menu-movil {
     display: none;
     background: transparent;
@@ -396,8 +394,10 @@ ul {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 99999; /* Siempre encima */
-    pointer-events: auto !important; /* ✅ Acepta el clic */
+    z-index: 99999 !important; /* Encima absoluto */
+    pointer-events: auto !important; /* Recibe clic sí o sí */
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -405,9 +405,15 @@ ul {
         display: block !important;
     }
 
+    .navbar {
+        position: relative;
+        overflow: visible !important; /* Evita que corte el menú */
+    }
+
     .navbar-container {
         position: relative;
-        z-index: 100; /* ✅ Barra encima del carrusel */
+        z-index: 100;
+        overflow: visible !important;
     }
 
     .nav-desktop {
@@ -422,7 +428,8 @@ ul {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
-        z-index: 99998;
+        z-index: 99998 !important;
+        pointer-events: auto !important;
     }
 
     .nav-desktop.mostrar {

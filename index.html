@@ -81,7 +81,7 @@
                 <a href="catalogo.html" class="boton boton-azul">IR AL CATÁLOGO <i class="fa fa-arrow-right"></i></a> <!-- ENLACE A CATÁLOGO -->
             </div>
             <div class="productos-imagen">
-                <img src="imagenes/productos-principales.png" alt="Productos Fija Pega LJP">
+                <img src="FIJA.jpg" alt="Productos Fija Pega LJP">
             </div>
         </div>
     </section>
@@ -196,6 +196,30 @@
     }
     setInterval(cambiarSlide, 5000); // Cambia cada 5 segundos
     puntos.forEach((punto, i) => punto.addEventListener('click', () => cambiarSlide(i)));
+    
+</script>
+<script>
+const botonMenu = document.querySelector('.menu-movil');
+const nav = document.querySelector('.nav-desktop');
+
+console.log({botonMenu, nav}); // ayuda a ver si los encuentra
+
+if (botonMenu && nav) {
+    botonMenu.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('mostrar');
+        this.innerHTML = nav.classList.contains('mostrar') 
+            ? '<i class="fa fa-times"></i>' 
+            : '<i class="fa fa-bars"></i>';
+    });
+
+    nav.querySelectorAll('a').forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            nav.classList.remove('mostrar');
+            botonMenu.innerHTML = '<i class="fa fa-bars"></i>';
+        });
+    });
+}
 </script>
 </body>
 </html>

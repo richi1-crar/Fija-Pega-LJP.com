@@ -260,22 +260,22 @@ function enviarPorWhatsApp(form) {
     </footer>
     <script>
 const botonMenu = document.querySelector('.menu-movil');
-const navegacion = document.querySelector('.nav-desktop');
+const nav = document.querySelector('.nav-desktop');
 
-// Evita error si no encuentra el botón
-if (botonMenu && navegacion) {
-    botonMenu.addEventListener('click', () => {
-        navegacion.classList.toggle('mostrar');
-        // Cambia ícono: rayas ↔ X
-        botonMenu.innerHTML = navegacion.classList.contains('mostrar') 
+console.log({botonMenu, nav}); // ayuda a ver si los encuentra
+
+if (botonMenu && nav) {
+    botonMenu.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.classList.toggle('mostrar');
+        this.innerHTML = nav.classList.contains('mostrar') 
             ? '<i class="fa fa-times"></i>' 
             : '<i class="fa fa-bars"></i>';
     });
 
-    // Cerrar menú al tocar un enlace
-    navegacion.querySelectorAll('a').forEach(enlace => {
+    nav.querySelectorAll('a').forEach(enlace => {
         enlace.addEventListener('click', () => {
-            navegacion.classList.remove('mostrar');
+            nav.classList.remove('mostrar');
             botonMenu.innerHTML = '<i class="fa fa-bars"></i>';
         });
     });
