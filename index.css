@@ -381,3 +381,52 @@ ul {
         justify-content: flex-start;
     }
 }
+
+/* ==============================
+   ESTILOS PARA MENÚ HAMBURGUESA
+   ============================== */
+
+/* Botón hamburguesa */
+.menu-movil {
+    display: none; /* Oculto en computador */
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--azul-primario); /* Tu color azul principal */
+    cursor: pointer;
+}
+
+/* VERSIÓN CELULAR (menos de 768px) */
+@media (max-width: 768px) {
+    .menu-movil {
+        display: block; /* Se ve el botón solo en celular */
+    }
+
+    /* Menú que se despliega */
+    .nav-desktop {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0.8rem;
+        transform: translateY(-150%); /* Escondido arriba */
+        transition: transform 0.3s ease; /* Animación suave */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    /* CLASE QUE ACTIVA EL MENÚ */
+    .nav-desktop.mostrar {
+        transform: translateY(0); /* Baja y se muestra */
+    }
+
+    .nav-desktop a {
+        padding: 0.8rem 1.5rem;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}

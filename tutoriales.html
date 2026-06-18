@@ -300,5 +300,17 @@
             </div>
         </div>
     </footer>
+    <!-- Script para menú móvil -->
+<script>
+const botonMenu = document.querySelector('.menu-movil');
+const navMovil = document.querySelector('.nav-desktop'); // o .nav-movil si lo tienes así
+
+botonMenu.addEventListener('click', () => {
+    navMovil.classList.toggle('mostrar');
+    botonMenu.innerHTML = botonMenu.innerHTML === '<i class="fa fa-bars"></i>' 
+        ? '<i class="fa fa-times"></i>' 
+        : '<i class="fa fa-bars"></i>';
+});
+</script>
 </body>
 </html>
