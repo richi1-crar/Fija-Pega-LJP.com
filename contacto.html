@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fija Pega LJP - Contacto</title>
+    <link rel="stylesheet" href="index.css">       <!-- Estilos generales compartidos -->
+    <link rel="stylesheet" href="contacto.css">    <!-- Estilos exclusivos de esta página -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" href="log.png">
+</head>
+<body>
+    <!-- Navbar COMPLETO Y CONECTADO -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="log.png" alt="Logo Fija Pega LJP" class="logo-img">
+                <span>CON LÁTEX</span>
+            </div>
+<nav class="nav-desktop">
+    <a href="index.html">INICIO</a>
+    <a href="servicios.html">SERVICIOS</a>
+    <a href="catalogo.html">CATÁLOGO</a>
+    <a href="tutoriales.html">TUTORIALES</a>
+    <a href="contacto.html" class="active">CONTACTO</a> <!-- ACTIVO AQUÍ -->
+</nav>
+
+            <button class="menu-movil">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Encabezado de Página -->
+    <section class="hero hero-pagina">
+        <div class="carrusel">
+            <div class="carrusel-imagen activa" style="background-image: url('mlj.png');"></div>
+            <div class="capa-oscura"></div>
+        </div>
+        
+        <div class="container hero-contenido">
+            <div class="hero-texto texto-centrado">
+                <h2>ESTAMOS PARA <br><span>ATENDERTE</span></h2>
+                <p>Escríbenos, llámanos o visítanos. Resolvemos tus dudas y recibimos tus pedidos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Principal: Datos + Formulario -->
+    <section class="contacto-seccion">
+        <div class="container">
+            <div class="contacto-grid">
+                <!-- Columna Izquierda: Datos de Contacto -->
+                <div class="contacto-datos">
+                    <h3>INFORMACIÓN DE <span>CONTACTO</span></h3>
+                    <p class="texto-intro">Comunícate con nosotros por cualquiera de estos medios o déjanos tu mensaje, te responderemos muy pronto.</p>
+
+                    <div class="datos-lista">
+                        <div class="dato-item">
+                            <div class="dato-icono">
+                                <i class="fa fa-whatsapp"></i>
+                            </div>
+                            <div class="dato-texto">
+                                <h4>WhatsApp / Teléfono</h4>
+                                <p>+57 3123906488</p>
+                                <p>+57 3219326915</p>
+                            </div>
+                        </div>
+
+                        <div class="dato-item">
+                            <div class="dato-icono">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="dato-texto">
+                                <h4>Correo Electrónico</h4>
+                                <p>info@fijapegaljp.com</p>
+                                <p>ventas@fijapegaljp.com</p>
+                            </div>
+                        </div>
+
+                        <div class="dato-item">
+                            <div class="dato-icono">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="dato-texto">
+                                <h4>Ubicación</h4>
+                                <p>Garagoa, Boyacá, Colombia</p>
+                                <p>FIJA PEGA LJP, Cra. 11 #17a 03 piso 1, Garagoa, Boyacá</p>
+                            </div>
+                        </div>
+
+                        <div class="dato-item">
+                            <div class="dato-icono">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="dato-texto">
+                                <h4>Horarios de Atención</h4>
+                                <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                                <p>Sábados: 8:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="redes-sociales">
+                        <h4>SÍGUENOS</h4>
+                        <a href="#" class="red-icono"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="red-icono"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="red-icono"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Formulario -->
+                <div class="contacto-formulario">
+                    <h3>ENVÍANOS TU <span>MENSAJE</span></h3>
+                  <form 
+    action="https://wa.me/573001234567?text=" 
+    method="GET" 
+    target="_blank" 
+    class="formulario"
+    onsubmit="return enviarPorWhatsApp(this)">
+
+    <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-doble">
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" placeholder="¿De qué se trata?" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu duda, solicitud o comentario..." required></textarea>
+    </div>
+
+    <button type="submit" class="boton boton-azul btn-enviar">ENVIAR MENSAJE <i class="fa fa-paper-plane"></i></button>
+</form>
+
+<script>
+function enviarPorWhatsApp(form) {
+    // CAMBIA AQUÍ TU NÚMERO DE WHATSAPP (con código país, sin + ni espacios)
+    const numeroWhatsApp = "573123906488"; // Ejemplo: "
+
+    // Recolectamos los datos del formulario
+    const nombre = form.nombre.value;
+    const telefono = form.telefono.value;
+    const correo = form.correo.value;
+    const asunto = form.asunto.value;
+    const mensaje = form.mensaje.value;
+
+    // Creamos el texto que te va a llegar
+    const texto = `*Nuevo mensaje desde la página web*%0A%0A` +
+                  `*Nombre:* ${nombre}%0A` +
+                  `*Teléfono:* ${telefono}%0A` +
+                  `*Correo:* ${correo}%0A` +
+                  `*Asunto:* ${asunto}%0A%0A` +
+                  `*Mensaje:*%0A${mensaje}`;
+
+    // Redirigimos a WhatsApp con los datos
+    window.open(`https://wa.me/${numeroWhatsApp}?text=${texto}`, '_blank');
+
+    // Evitamos que el formulario se envíe vacío
+    return false;
+}
+</script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Mapa / Ubicación -->
+    <section class="mapa-seccion fondo-gris">
+        <div class="container">
+            <div class="titulo-seccion">
+                <h3>NUESTRA <span>UBICACIÓN</span></h3>
+                <p>Estamos en Garagoa, Boyacá. Visítanos en nuestra planta o punto de venta principal</p>
+            </div>
+            
+           <div class="contenedor-mapa">
+    <!-- Mapa de ubicación FIJA PEGA LJP -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.876452745386!2d-73.3663901!3d5.0890259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6aa5b60f042e09%3A0x413df300430f8c34!2sFIJA%20PEGA%20LJP!5e0!3m2!1ses!2sco!4v1718750000000!5m2!1ses!2sco" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+        </div>
+    </section>
+
+    <!-- Sección Características -->
+    <section class="caracteristicas">
+        <div class="container">
+            <div class="titulo-seccion blanco">
+                <h3>ATENCIÓN <span>PERSONALIZADA</span></h3>
+            </div>
+
+            <div class="caracteristicas-grid cuatro">
+                <div class="caracteristica-item">
+                    <i class="fa fa-comments"></i>
+                    <h4>RESPUESTA RÁPIDA</h4>
+                    <p>Atendemos tus mensajes y llamadas en el menor tiempo posible.</p>
+                </div>
+                <div class="caracteristica-item">
+                    <i class="fa fa-truck"></i>
+                    <h4>ENVÍOS A TODO EL PAÍS</h4>
+                    <p>Coordinamos entregas a cualquier ciudad o municipio de Colombia.</p>
+                </div>
+                <div class="caracteristica-item">
+                    <i class="fa fa-user-circle"></i>
+                    <h4>ASESORÍA DIRECTA</h4>
+                    <p>Hablas directamente con expertos, no con sistemas automáticos.</p>
+                </div>
+                <div class="caracteristica-item">
+                    <i class="fa fa-shield"></i>
+                    <h4>RESPALDO TOTAL</h4>
+                    <p>Garantizamos calidad y cumplimiento en cada pedido que recibimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer IGUAL A TODAS LAS PÁGINAS -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-item">
+                <i class="fa fa-whatsapp"></i>
+                <div>
+                    <p>¿DUDAS? ESCRÍBENOS</p>
+                    <p class="telefono">3123906488</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <i class="fa fa-map-marker"></i>
+                <p>ENVÍOS A TODO COLOMBIA</p>
+            </div>
+            <div class="footer-item">
+                <i class="fa fa-instagram"></i>
+                <p>SÍGUENOS <br> @fijapegaljp</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

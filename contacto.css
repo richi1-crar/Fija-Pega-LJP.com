@@ -1,0 +1,232 @@
+/* ==================================
+   ESTILOS EXCLUSIVOS PARA CONTACTO
+   ================================== */
+
+/* Hero para páginas internas */
+.hero-pagina {
+    height: 60vh !important;
+    min-height: 400px !important;
+}
+.texto-centrado {
+    text-align: center;
+}
+.texto-centrado h2 {
+    font-size: clamp(2.5rem, 6vw, 4rem) !important;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.titulo-seccion h3 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 900;
+    color: var(--azul-primario);
+    line-height: 1.2;
+}
+.titulo-seccion h3 span {
+    color: var(--rojo-secundario);
+}
+.titulo-seccion p {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+.titulo-seccion.blanco h3,
+.titulo-seccion.blanco p {
+    color: var(--blanco);
+}
+
+/* Fondo gris alterno */
+.fondo-gris {
+    background-color: var(--gris-claro);
+}
+
+/* Sección Principal de Contacto */
+.contacto-seccion {
+    padding: 4rem 0;
+    background-color: var(--blanco);
+}
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+/* Columna Datos */
+.contacto-datos h3 {
+    font-size: 2rem;
+    color: var(--azul-primario);
+    margin-bottom: 1rem;
+}
+.contacto-datos h3 span {
+    color: var(--rojo-secundario);
+}
+.texto-intro {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.datos-lista {
+    margin-bottom: 2.5rem;
+}
+.dato-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+.dato-icono {
+    width: 50px;
+    height: 50px;
+    background-color: var(--amarillo);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--azul-primario);
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+.dato-texto h4 {
+    color: var(--azul-primario);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+.dato-texto p {
+    color: #444;
+    margin: 0.2rem 0;
+}
+
+.redes-sociales h4 {
+    color: var(--azul-primario);
+    margin-bottom: 1rem;
+}
+.red-icono {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--azul-primario);
+    color: var(--blanco);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    transition: all 0.3s ease;
+}
+.red-icono:hover {
+    background-color: var(--rojo-secundario);
+    transform: scale(1.1);
+}
+
+/* Columna Formulario */
+.contacto-formulario {
+    background: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--rojo-secundario);
+}
+.contacto-formulario h3 {
+    font-size: 2rem;
+    color: var(--azul-primario);
+    margin-bottom: 1.5rem;
+}
+.contacto-formulario h3 span {
+    color: var(--rojo-secundario);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--azul-primario);
+    box-shadow: 0 0 0 3px rgba(0, 82, 147, 0.1);
+}
+
+.form-doble {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.btn-enviar {
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+/* Sección Mapa */
+.mapa-seccion {
+    padding: 4rem 0;
+}
+.contenedor-mapa {
+    width: 100%;
+    height: 400px;
+    background-color: #e9e9e9;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapa-placeholder {
+    text-align: center;
+    color: #777;
+}
+.mapa-placeholder i {
+    font-size: 4rem;
+    color: var(--rojo-secundario);
+    margin-bottom: 1rem;
+}
+.mapa-placeholder p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Ajuste grid 4 columnas */
+.caracteristicas-grid.cuatro {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .contacto-grid {
+        grid-template-columns: 1fr 1.2fr;
+        align-items: start;
+    }
+    .form-doble {
+        grid-template-columns: 1fr 1fr;
+    }
+    .caracteristicas-grid.cuatro {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .contacto-seccion {
+        padding: 5rem 0;
+    }
+}

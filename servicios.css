@@ -1,0 +1,116 @@
+/* ==================================
+   ESTILOS EXCLUSIVOS PARA SERVICIOS
+   ================================== */
+
+/* Hero para páginas internas */
+.hero-pagina {
+    height: 60vh !important;
+    min-height: 400px !important;
+}
+.texto-centrado {
+    text-align: center;
+}
+.texto-centrado h2 {
+    font-size: clamp(2.5rem, 6vw, 4rem) !important;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.titulo-seccion h3 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 900;
+    color: var(--azul-primario);
+    line-height: 1.2;
+}
+.titulo-seccion h3 span {
+    color: var(--rojo-secundario);
+}
+.titulo-seccion p {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+.titulo-seccion.blanco h3,
+.titulo-seccion.blanco p {
+    color: var(--blanco);
+}
+
+/* Grid de Servicios */
+.servicios-principales {
+    padding: 4rem 0;
+    background-color: var(--blanco);
+}
+.servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.servicio-card {
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--amarillo);
+    transition: transform 0.3s ease;
+}
+.servicio-card:hover {
+    transform: translateY(-5px);
+}
+.servicio-icono {
+    width: 70px;
+    height: 70px;
+    background-color: var(--azul-primario);
+    color: var(--blanco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.servicio-card h4 {
+    color: var(--azul-primario);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.servicio-card p {
+    color: #444;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+.servicio-lista li {
+    margin: 0.6rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333;
+}
+.servicio-lista li i {
+    color: var(--rojo-secundario);
+    font-size: 0.9rem;
+}
+
+/* Ajuste especial grid 4 columnas */
+.caracteristicas-grid.cuatro {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive Servicios */
+@media (min-width: 768px) {
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .caracteristicas-grid.cuatro {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .servicios-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

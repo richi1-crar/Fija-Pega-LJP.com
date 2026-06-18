@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fija Pega LJP - Inicio</title>
+    <link rel="stylesheet" href="index.css"> <!-- Estilo general -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+   <!-- Logo que aparece en la pestaña del navegador -->
+<link rel="icon" type="image/png" href="log.png">
+
+</head>
+<body>
+    <!-- Navbar con enlaces CONECTADOS -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="log.png" alt="Logo Fija Pega LJP" class="logo-img">
+                <span>CON LÁTEX</span>
+            </div>
+
+           <nav class="nav-desktop">
+    <a href="index.html" class="active">INICIO</a>       <!-- ACTIVO AQUÍ -->
+    <a href="servicios.html">SERVICIOS</a>
+    <a href="catalogo.html">CATÁLOGO</a>
+    <a href="tutoriales.html">TUTORIALES</a>
+    <a href="contacto.html">CONTACTO</a>
+</nav>
+
+            <button class="menu-movil">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección CARRUSEL DE IMÁGENES -->
+    <section class="hero">
+        <!-- Carrusel con 5 imágenes -->
+<div class="carrusel">
+    <div class="carrusel-imagen activa" style="background-image: url('VOLU.png');"></div>
+    <div class="carrusel-imagen" style="background-image: url('imag.png');"></div>
+    <div class="carrusel-imagen" style="background-image: url('porc.png');"></div>
+    <div class="carrusel-imagen" style="background-image: url('fuera.png');"></div>
+    <div class="carrusel-imagen" style="background-image: url('fachas.png');"></div> <!-- AQUÍ VA TU QUINTA IMAGEN -->
+    <div class="capa-oscura"></div>
+</div>
+
+<!-- Indicadores (puntos) AHORA SON 5 -->
+<div class="indicadores">
+    <span class="activa" data-idx="0"></span>
+    <span data-idx="1"></span>
+    <span data-idx="2"></span>
+    <span data-idx="3"></span>
+    <span data-idx="4"></span> <!-- Quinto punto agregado -->
+</div>
+        
+        <div class="container hero-contenido">
+            <div class="hero-texto">
+                <h2>SOLUCIONES<br><span>QUE CONSTRUYEN</span><br>CONFIANZA</h2>
+                <p>Pegantes y boquillas de alta calidad para obras que perduran.</p>
+                <a href="catalogo.html" class="boton boton-rojo">VER NUESTROS PRODUCTOS</a> <!-- ENLACE DIRECTO A CATÁLOGO -->
+            </div>
+        </div>
+
+        <div class="indicadores">
+            <span class="activa" data-idx="0"></span>
+            <span data-idx="1"></span>
+            <span data-idx="2"></span>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section class="productos">
+        <div class="container productos-grid">
+            <div class="productos-texto">
+                <h3>PRODUCTOS <span>DE ALTO RENDIMIENTO</span></h3>
+                <p>Formulados para brindar máxima adherencia, durabilidad y acabados profesionales.</p>
+                <a href="catalogo.html" class="boton boton-azul">IR AL CATÁLOGO <i class="fa fa-arrow-right"></i></a> <!-- ENLACE A CATÁLOGO -->
+            </div>
+            <div class="productos-imagen">
+                <img src="imagenes/productos-principales.png" alt="Productos Fija Pega LJP">
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="caracteristicas">
+        <div class="container caracteristicas-grid">
+            <div class="caracteristica-item">
+                <i class="fa fa-wrench"></i>
+                <h4>ALTA ADHERENCIA</h4>
+                <p>Fijación segura en todo tipo de superficies.</p>
+            </div>
+            <div class="caracteristica-item">
+                <i class="fa fa-shield"></i>
+                <h4>DURABILIDAD GARANTIZADA</h4>
+                <p>Resistentes al paso del tiempo y condiciones extremas.</p>
+            </div>
+            <div class="caracteristica-item">
+                <i class="fa fa-th-large"></i>
+                <h4>ACABADOS PROFESIONALES</h4>
+                <p>Resultados estéticos y uniformes.</p>
+            </div>
+            <div class="caracteristica-item">
+                <i class="fa fa-palette"></i>
+                <h4>COLORES PERSONALIZADOS</h4>
+                <p>Boquillas al color que tu proyecto necesite.</p>
+            </div>
+            <div class="caracteristica-item">
+                <i class="fa fa-truck"></i>
+                <h4>COBERTURA NACIONAL</h4>
+                <p>Envíos a todo el país con calidad garantizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="nosotros">
+        <div class="container nosotros-grid">
+            <div class="nosotros-texto">
+                <h3>SOBRE <span>FIJA PEGA LJP</span></h3>
+                <p>Somos una empresa especializada en la fabricación y distribución de pegantes, boquillas y productos para acabados de construcción. Nuestro compromiso es ofrecer calidad, innovación y soluciones confiables para profesionales de la construcción y el hogar.</p>
+                <ul>
+                    <li><i class="fa fa-check"></i> Productos con tecnología CON LÁTEX</li>
+                    <li><i class="fa fa-check"></i> Formulas de alto desempeño</li>
+                    <li><i class="fa fa-check"></i> Calidad que cumple normas técnicas</li>
+                    <li><i class="fa fa-check"></i> Más de 10 años en el mercado</li>
+                </ul>
+                <a href="servicios.html" class="boton boton-azul">VER NUESTROS SERVICIOS</a> <!-- ENLACE A SERVICIOS -->
+            </div>
+            <div class="nosotros-imagen">
+                <img src="FIJA.jpg" alt="Trabajador instalando cerámica">
+                <div class="recorte-amarillo"></div>
+                <div class="recorte-rojo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frase Final -->
+    <section class="frase-final">
+        <div class="container">
+            <h3>TU OBRA MERECE LO MEJOR, <br><span>USA FIJA PEGA LJP</span></h3>
+            <div class="iconos-grid">
+                <div class="icono-item">
+                    <i class="fa fa-medal"></i>
+                    <p>CALIDAD QUE SE SIENTE</p>
+                </div>
+                <div class="icono-item">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>RESULTADOS QUE DURAN</p>
+                </div>
+                <div class="icono-item">
+                    <i class="fa fa-hard-hat"></i>
+                    <p>CONSTRUCTOR QUE CONFÍA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-item">
+                <i class="fa fa-whatsapp"></i>
+                <div>
+                    <p>¿DUDAS? ESCRÍBENOS</p>
+                    <p class="telefono">3123906488</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <i class="fa fa-map-marker"></i>
+                <p>ENVÍOS A TODO COLOMBIA</p>
+            </div>
+            <div class="footer-item">
+                <i class="fa fa-instagram"></i>
+                <p>SÍGUENOS <br> @fijapegaljp</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Código para carrusel -->
+    <script>
+    const slides = document.querySelectorAll('.carrusel-imagen');
+    const puntos = document.querySelectorAll('.indicadores span');
+    let actual = 0;
+
+    function cambiarSlide(n) {
+        slides[actual].classList.remove('activa');
+        puntos[actual].classList.remove('activa');
+        actual = (n !== undefined) ? n : (actual + 1) % slides.length;
+        slides[actual].classList.add('activa');
+        puntos[actual].classList.add('activa');
+    }
+    setInterval(cambiarSlide, 5000); // Cambia cada 5 segundos
+    puntos.forEach((punto, i) => punto.addEventListener('click', () => cambiarSlide(i)));
+</script>
+</body>
+</html>

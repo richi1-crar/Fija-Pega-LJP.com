@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fija Pega LJP - Catálogo de Productos</title>
+    <link rel="stylesheet" href="index.css">   <!-- Estilos generales compartidos -->
+    <link rel="stylesheet" href="catalogo.css"> <!-- Estilos exclusivos de esta página -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/png" href="log.png">
+  </head>
+<body>
+    <!-- Navbar IGUAL, CONECTADO A LAS OTRAS PÁGINAS -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="log.png" alt="Logo Fija Pega LJP" class="logo-img">
+                <span>CON LÁTEX</span>
+            </div>
+<nav class="nav-desktop">
+    <a href="index.html">INICIO</a>
+    <a href="servicios.html">SERVICIOS</a>
+    <a href="catalogo.html" class="active">CATÁLOGO</a> <!-- ACTIVO AQUÍ -->
+    <a href="tutoriales.html">TUTORIALES</a>
+    <a href="contacto.html">CONTACTO</a>
+</nav>
+
+            <button class="menu-movil">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Encabezado de Página -->
+    <section class="hero hero-pagina">
+        <div class="carrusel">
+            <div class="carrusel-imagen activa" style="background-image: url('cat.png');"></div>
+            <div class="capa-oscura"></div>
+        </div>
+        
+        <div class="container hero-contenido">
+            <div class="hero-texto texto-centrado">
+                <h2>CATÁLOGO DE <br><span>PRODUCTOS</span></h2>
+                <p>La solución perfecta para cada tipo de instalación y acabado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Pegantes -->
+    <section class="catalogo-seccion">
+        <div class="container">
+            <div class="titulo-seccion">
+                <h3>PEGANTES ESPECIALIZADOS</h3>
+                <p>Formulaciones específicas según el material y la zona de instalación</p>
+            </div>
+
+            <div class="productos-catalogo-grid">
+                <!-- Producto 1: Cerámico Interior -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="imagenes/ceramico-interior.png" alt="Pegante Cerámico Interior">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Cerámico Interior</h4>
+                        <p>Pegante de alto rendimiento diseñado para la instalación de cerámica en pisos y paredes de áreas interiores. Fácil aplicación, excelente trabajabilidad y gran adherencia sobre superficies rígidas.</p>
+                        <ul class="caracteristicas-producto">
+                            <li><i class="fa fa-check-circle"></i> Para piezas de baja y media absorción</li>
+                            <li><i class="fa fa-check-circle"></i> Ideal para viviendas y oficinas</li>
+                            <li><i class="fa fa-check-circle"></i> No desliza en paredes</li>
+                        </ul>
+                        <a href="#" class="boton boton-azul">Ver ficha técnica</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Cerámico Exterior -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="imagenes/ceramico-exterior.png" alt="Pegante Cerámico Exterior">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Cerámico Exterior</h4>
+                        <p>Elaborado con aditivos especiales que le otorgan resistencia a cambios de temperatura, humedad y rayos UV. Garantiza una fijación segura y duradera en zonas expuestas al clima.</p>
+                        <ul class="caracteristicas-producto">
+                            <li><i class="fa fa-check-circle"></i> Resistente a intemperie</li>
+                            <li><i class="fa fa-check-circle"></i> Impermeable y durable</li>
+                            <li><i class="fa fa-check-circle"></i> Para terrazas, patios y zonas exteriores</li>
+                        </ul>
+                        <a href="#" class="boton boton-azul">Ver ficha técnica</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Porcelanato Interior -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="imagenes/porcelanato-interior.png" alt="Pegante Porcelanato Interior">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Porcelanato Interior</h4>
+                        <p>Fórmula de alta adherencia y poder de anclaje, diseñada específicamente para piezas de baja absorción y gran formato. Asegura que el porcelanato quede perfectamente fijado y nivelado.</p>
+                        <ul class="caracteristicas-producto">
+                            <li><i class="fa fa-check-circle"></i> Máxima fuerza de unión</li>
+                            <li><i class="fa fa-check-circle"></i> Para piezas de gran formato</li>
+                            <li><i class="fa fa-check-circle"></i> Evita desprendimientos</li>
+                        </ul>
+                        <a href="#" class="boton boton-azul">Ver ficha técnica</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Porcelanato Exterior -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="imagenes/porcelanato-exterior.png" alt="Pegante Porcelanato Exterior">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Porcelanato Exterior</h4>
+                        <p>Producto de altas prestaciones con tecnología látex, diseñado para soportar el peso y las condiciones ambientales extremas. Único en el mercado para instalaciones exigentes en exteriores.</p>
+                        <ul class="caracteristicas-producto">
+                            <li><i class="fa fa-check-circle"></i> Tecnología con látex</li>
+                            <li><i class="fa fa-check-circle"></i> Resiste heladas y calor extremo</li>
+                            <li><i class="fa fa-check-circle"></i> Garantía de por vida en la instalación</li>
+                        </ul>
+                        <a href="#" class="boton boton-azul">Ver ficha técnica</a>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Cerámico para Fachadas -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="imagenes/ceramico-fachadas.png" alt="Pegante Cerámico para Fachadas">
+                    </div>
+                    <div class="producto-info">
+                        <h4>Cerámico para Fachadas</h4>
+                        <p>Desarrollado para instalaciones verticales de altura. Combina alta adherencia con flexibilidad, permitiendo que la estructura se mueva sin desprender el recubrimiento. Cumple con todas las normas de construcción sismo-resistente.</p>
+                        <ul class="caracteristicas-producto">
+                            <li><i class="fa fa-check-circle"></i> Alta flexibilidad y resistencia</li>
+                            <li><i class="fa fa-check-circle"></i> Uso en altura y fachadas ventiladas</li>
+                            <li><i class="fa fa-check-circle"></i> Certificado por normas técnicas</li>
+                        </ul>
+                        <a href="#" class="boton boton-azul">Ver ficha técnica</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Boquillas -->
+    <section class="catalogo-seccion fondo-gris">
+        <div class="container">
+            <div class="titulo-seccion">
+                <h3>BOQUILLAS PARA ACABADOS</h3>
+                <p>El toque final perfecto, disponible en <span>cualquier color</span> que necesites</p>
+            </div>
+
+            <div class="producto-card boquilla-card">
+                <div class="producto-imagen">
+                    <img src="imagenes/boquilla-colores.png" alt="Boquilla de cualquier color">
+                </div>
+                <div class="producto-info">
+                    <h4>Boquilla de Alta Resistencia</h4>
+                    <p>Compuesto cementicio de alto desempeño para el sellado de juntas entre piezas cerámicas, porcelanatos, piedras y mármoles. Es impermeable, resistente al moho, a los rayados y al desgaste, asegurando que tus instalaciones se vean impecables por años.</p>
+                    
+                    <div class="colores-disponibles">
+                        <h5>DISPONIBLE EN TODOS LOS COLORES:</h5>
+                        <div class="paleta-colores">
+                            <span class="color-muestra" style="background-color: #f0e6d6;"></span>
+                            <span class="color-muestra" style="background-color: #d4c7b0;"></span>
+                            <span class="color-muestra" style="background-color: #b8a48e;"></span>
+                            <span class="color-muestra" style="background-color: #8b7d6b;"></span>
+                            <span class="color-muestra" style="background-color: #4a4338;"></span>
+                            <span class="color-muestra" style="background-color: #ffffff; border:1px solid #ccc;"></span>
+                            <span class="color-muestra" style="background-color: #e0e0e0;"></span>
+                            <span class="color-muestra" style="background-color: #9e9e9e;"></span>
+                            <span class="color-muestra" style="background-color: #424242;"></span>
+                            <span class="color-muestra" style="background-color: #c62828;"></span>
+                            <span class="color-muestra" style="background-color: #2e7d32;"></span>
+                            <span class="color-muestra" style="background-color: #1565c0;"></span>
+                        </div>
+                        <p class="texto-colores">Si necesitas un tono específico o una combinación especial, ¡lo fabricamos para ti! No hay límite de colores.</p>
+                    </div>
+
+                    <ul class="caracteristicas-producto">
+                        <li><i class="fa fa-check-circle"></i> Impermeable y anti-humedad</li>
+                        <li><i class="fa fa-check-circle"></i> Protege contra hongos y bacterias</li>
+                        <li><i class="fa fa-check-circle"></i> Fácil de limpiar y mantener</li>
+                        <li><i class="fa fa-check-circle"></i> Cobertura total: desde tonos neutros hasta colores vivos</li>
+                    </ul>
+                   <a href="https://wa.me/573123906488?text=Hola,%20quiero%20solicitar%20información%20y%20precios%20para%20colores%20personalizados%20de%20boquillas." target="_blank" class="boton boton-azul">Solicitar color personalizado</a>>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Características Generales -->
+    <section class="caracteristicas">
+        <div class="container">
+            <div class="titulo-seccion blanco">
+                <h3>TODOS NUESTROS PRODUCTOS <span>INCLUYEN TECNOLOGÍA CON LÁTEX</span></h3>
+            </div>
+
+            <div class="caracteristicas-grid cuatro">
+                <div class="caracteristica-item">
+                    <i class="fa fa-shield"></i>
+                    <h4>Más Resistencia</h4>
+                    <p>Mayor durabilidad frente al desgaste y el paso del tiempo.</p>
+                </div>
+                <div class="caracteristica-item">
+                    <i class="fa fa-tint"></i>
+                    <h4>Impermeabilidad</h4>
+                    <p>Evita el paso de humedad y protege tus muros y pisos.</p>
+                </div>
+                <div class="caracteristica-item">
+                    <i class="fa fa-expand"></i>
+                    <h4>Flexibilidad</h4>
+                    <p>Absorbe movimientos de la estructura sin agrietarse.</p>
+                </div>
+                <div class="caracteristica-item">
+                    <i class="fa fa-certificate"></i>
+                    <h4>Calidad Garantizada</h4>
+                    <p>Cumplen con la Norma Técnica Colombiana NTC 4202.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamado a acción -->
+    <section class="productos">
+        <div class="container productos-grid">
+            <div class="productos-texto">
+                <h3>¿NO ENCUENTRAS LO QUE BUSCAS? <br><span>LO FABRICAMOS PARA TI</span></h3>
+                <p>Contamos con laboratorio propio para desarrollar formulaciones especiales, colores únicos o presentaciones personalizadas según los requerimientos de tu proyecto.</p>
+                <a href="https://wa.me/573123906488?text=Hola,%20me%20interesa%20solicitar%20información%20o%20un%20presupuesto%20para%20pedidos%20especiales%20y%20productos%20personalizados." target="_blank" class="boton boton-azul">CONTÁCTANOS PARA PEDIDOS ESPECIALES <i class="fa fa-whatsapp"></i></a>
+            </div>
+            <div class="productos-imagen">
+                <img src="imagenes/calidad-laboratorio.jpg" alt="Calidad y laboratorio Fija Pega LJP">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer IGUAL -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-item">
+                <i class="fa fa-whatsapp"></i>
+                <div>
+                    <p>¿DUDAS? ESCRÍBENOS</p>
+                    <p class="telefono">3123906488</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <i class="fa fa-map-marker"></i>
+                <p>ENVÍOS A TODO COLOMBIA</p>
+            </div>
+            <div class="footer-item">
+                <i class="fa fa-instagram"></i>
+                <p>SÍGUENOS <br> @fijapegaljp</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
