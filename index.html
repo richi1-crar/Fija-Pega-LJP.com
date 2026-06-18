@@ -196,28 +196,6 @@
     }
     setInterval(cambiarSlide, 5000); // Cambia cada 5 segundos
     puntos.forEach((punto, i) => punto.addEventListener('click', () => cambiarSlide(i)));
-
-</script>
-<script>
-const botonMenu = document.querySelector('.menu-movil');
-const nav = document.querySelector('.nav-desktop');
-
-if (botonMenu && nav) {
-    botonMenu.addEventListener('click', () => {
-        nav.classList.toggle('mostrar');
-        botonMenu.innerHTML = nav.classList.contains('mostrar') 
-            ? '<i class="fa fa-times"></i>' 
-            : '<i class="fa fa-bars"></i>';
-    });
-
-    // Cerrar al hacer clic en una opción
-    nav.querySelectorAll('a').forEach(enlace => {
-        enlace.addEventListener('click', () => {
-            nav.classList.remove('mostrar');
-            botonMenu.innerHTML = '<i class="fa fa-bars"></i>';
-        });
-    });
-}
 </script>
 </body>
 </html>

@@ -383,71 +383,63 @@ ul {
 }
 
 /* ==============================
-   MENÚ HAMBURGUESA - SOLUCIÓN FINAL
+   MENÚ HAMBURGUESA - DEFINITIVO
    ============================== */
 
-/* Botón hamburguesa: OCULTO en PC, VISIBLE en celular */
 .menu-movil {
-    display: none; /* Oculto en escritorio */
+    display: none;
     background: transparent;
     border: none;
-    font-size: 2rem; /* Tamaño grande para que se vea bien */
-    color: #ffffff !important; /* COLOR BLANCO para que se vea en tu barra azul */
+    font-size: 2rem;
+    color: #ffffff !important;
     cursor: pointer;
     position: absolute;
-    right: 20px; /* Lo pegamos a la derecha */
+    right: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centrado verticalmente */
-    z-index: 99999; /* Por encima de todo */
+    transform: translateY(-50%);
+    z-index: 99999;
 }
 
-/* 📱 SOLO PARA CELULARES (menos de 768px de ancho) */
 @media (max-width: 768px) {
-
-    /* Hacemos que aparezca el botón */
     .menu-movil {
         display: block !important;
     }
 
-    /* El menú que está oculto */
+    .navbar-container {
+        position: relative;
+    }
+
     .nav-desktop {
         position: absolute;
-        top: 100%; /* Justo debajo de la barra azul */
+        top: 100%;
         left: 0;
-        width: 100%; /* Ancho completo */
-        background-color: #ffffff; /* Fondo blanco */
+        width: 100%;
+        background-color: #ffffff !important; /* Fondo blanco sólido */
         display: flex;
-        flex-direction: column; /* Opciones una debajo de otra */
-        box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Sombra bonita */
-        
-        /* AQUÍ ESTABA EL SECRETO: Ocultamos con altura 0 */
+        flex-direction: column;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease; /* Animación suave al bajar */
+        transition: max-height 0.4s ease;
         z-index: 99998;
     }
 
-    /* Cuando tiene la clase "mostrar", se abre */
     .nav-desktop.mostrar {
-        max-height: 400px; /* Altura suficiente para las 5 opciones */
+        max-height: 400px; /* Espacio suficiente para las 5 opciones */
     }
 
-    /* Estilo de cada enlace del menú */
     .nav-desktop a {
-        padding: 15px 20px; /* Espacio interno */
-        color: #004e8c !important; /* Tu color azul */
-        font-weight: 600;
-        border-bottom: 1px solid #eeeeee; /* Línea separadora */
-        text-align: left;
-        font-size: 16px;
+        display: block !important;
+        padding: 1.2rem 1.8rem !important;
+        color: #005293 !important; /* Letra azul fuerte */
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        border-bottom: 1px solid #eeeeee !important;
+        background-color: #ffffff !important;
+        text-align: left !important;
     }
 
     .nav-desktop a:last-child {
-        border-bottom: none; /* Quitamos la última línea */
-    }
-
-    /* Para que el contenido no se monte encima */
-    .navbar-container {
-        position: relative;
+        border-bottom: none !important;
     }
 }
