@@ -163,22 +163,20 @@
     </footer>
    <script>
 const botonMenu = document.querySelector('.menu-movil');
-const navegacion = document.querySelector('.nav-desktop');
+const nav = document.querySelector('.nav-desktop');
 
-// Evita error si no encuentra el botón
-if (botonMenu && navegacion) {
+if (botonMenu && nav) {
     botonMenu.addEventListener('click', () => {
-        navegacion.classList.toggle('mostrar');
-        // Cambia ícono: rayas ↔ X
-        botonMenu.innerHTML = navegacion.classList.contains('mostrar') 
+        nav.classList.toggle('mostrar');
+        botonMenu.innerHTML = nav.classList.contains('mostrar') 
             ? '<i class="fa fa-times"></i>' 
             : '<i class="fa fa-bars"></i>';
     });
 
-    // Cerrar menú al tocar un enlace
-    navegacion.querySelectorAll('a').forEach(enlace => {
+    // Cerrar al hacer clic en una opción
+    nav.querySelectorAll('a').forEach(enlace => {
         enlace.addEventListener('click', () => {
-            navegacion.classList.remove('mostrar');
+            nav.classList.remove('mostrar');
             botonMenu.innerHTML = '<i class="fa fa-bars"></i>';
         });
     });
