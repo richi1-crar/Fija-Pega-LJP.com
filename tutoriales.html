@@ -201,35 +201,42 @@
         </div>
     </section>
 
-    <!-- Sección Videos Destacados -->
-    <section class="videos-seccion">
-        <div class="container">
-            <div class="titulo-seccion">
-                <h3>VIDEOS <span>RECOMENDADOS</span></h3>
-            </div>
+   <!-- Si usas Font Awesome para el icono de reproducir -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-            <div class="videos-grid">
-                <div class="video-item">
-                    <div class="video-contenedor">
-                        <img src="imagenes/video-thumb1.jpg" alt="Video 1">
-                        <div class="play-icono"><i class="fa fa-play"></i></div>
-                    </div>
-                    <h4>¿Cómo preparar la superficie?</h4>
-                </div>
-                <div class="video-item">
-                    <div class="video-contenedor">
-                        <img src="imagenes/video-thumb2.jpg" alt="Video 2">
-                        <div class="play-icono"><i class="fa fa-play"></i></div>
-                    </div>
-                    <h4>Mezcla perfecta del pegante</h4>
-                </div>
-                <div class="video-item">
-                    <div class="video-contenedor">
-                        <img src="imagenes/video-thumb3.jpg" alt="Video 3">
-                        <div class="play-icono"><i class="fa fa-play"></i></div>
-                    </div>
-                    <h4>Limpieza correcta de boquilla</h4>
-                </div>
+<div class="videos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px 0;">
+
+    <!-- Video 1 -->
+    <div class="video-item" style="text-align: center;">
+        <div class="video-contenedor" style="position: relative; width: 100%; max-width: 450px; margin: 0 auto; border-radius: 8px; overflow: hidden; background: #000;">
+            <video src="videoplayback.mp4" controls poster="fabri2.jpeg" style="width: 100%; height: auto; display: block;" preload="metadata">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+        <h4 style="margin-top: 12px; font-size: 16px; font-weight: 500;">¿Cómo preparar la superficie?</h4>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-item" style="text-align: center;">
+        <div class="video-contenedor" style="position: relative; width: 100%; max-width: 450px; margin: 0 auto; border-radius: 8px; overflow: hidden; background: #000;">
+            <video src="videos/ingles.mp4" controls poster="imagenes/video-thumb2.jpg" style="width: 100%; height: auto; display: block;" preload="metadata">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+        <h4 style="margin-top: 12px; font-size: 16px; font-weight: 500;">Mezcla perfecta del pegante</h4>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-item" style="text-align: center;">
+        <div class="video-contenedor" style="position: relative; width: 100%; max-width: 450px; margin: 0 auto; border-radius: 8px; overflow: hidden; background: #000;">
+            <video src="videos/video3.mp4" controls poster="imagenes/video-thumb3.jpg" style="width: 100%; height: auto; display: block;" preload="metadata">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+        <h4 style="margin-top: 12px; font-size: 16px; font-weight: 500;">Limpieza correcta de boquilla</h4>
+    </div>
+
+</div>
             </div>
         </div>
     </section>
@@ -275,7 +282,7 @@
                 <a href="contacto.html" class="boton boton-azul">IR A CONTACTO <i class="fa fa-whatsapp"></i></a>
             </div>
             <div class="productos-imagen">
-                <img src="imagenes/equipo-tecnico.jpg" alt="Equipo técnico Fija Pega LJP">
+                <img src="portaa.jpeg" alt="Equipo técnico Fija Pega LJP">
             </div>
         </div>
     </section>
